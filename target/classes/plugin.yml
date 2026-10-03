@@ -1,0 +1,164 @@
+name: DonutCore
+version: '1.0'
+main: me.theus.donutCore.DonutCore
+api-version: '1.21'
+load: POSTWORLD
+softdepend: [PlaceholderAPI, Vault, ProtocolLib, packetevents]
+
+commands:
+  ec:
+    description: Abre o seu Ender Chest
+    permission: donutcore.enderchest
+  echest:
+    description: Abre o seu Ender Chest
+    permission: donutcore.enderchest
+  endersee:
+    description: Abre o Ender Chest de outro jogador
+    permission: donutcore.endersee
+  setspawn:
+    description: Define o spawn principal do servidor, do mundo e do DonutCore
+    permission: donutcore.admin
+  spawn:
+    description: Teleporta para o spawn ou abre o menu de spawn
+  afk:
+    description: Teleporta para a área AFK ou abre o menu AFK
+  team:
+    description: Gerencia sua equipe
+  home:
+    description: Teleporta ou gerencia suas homes
+  homes:
+    description: Abre o menu de homes
+  sethome:
+    description: Define uma home no seu local atual
+  delhome:
+    description: Deleta uma home criada
+  rtp:
+    description: Teleporta aleatoriamente pelo mundo
+  sell:
+    description: Abre o menu de vendas do servidor
+  worth:
+    description: Verifica o preço dos itens
+  stats:
+    description: Veja suas estatísticas ou de outro jogador
+    aliases: [ status, perfil, profile ]
+  settings:
+    description: Abre o menu de configurações pessoais
+    aliases: [ config ]
+  leaderboards:
+    description: Veja o ranking dos melhores jogadores
+    aliases: [ top, lb ]
+  tpa:
+    description: Envia um pedido de teleporte para outro jogador
+  tpahere:
+    description: Envia um pedido para outro jogador se teleportar até você
+  tpaccept:
+    description: Aceita um pedido de teleporte
+  tpdeny:
+    description: Rejeita um pedido de teleporte
+  bounty:
+    description: Sistema de recompensas de cabeças
+  shop:
+    description: Abre a loja de itens
+  rules:
+    description: Mostra as regras do servidor
+    aliases: [ regras ]
+  tpauto:
+    description: Ativa ou desativa o aceite automático de TPA
+  phantom:
+    description: Ativa ou desativa o spawn de phantoms próximo a você
+  clearlag:
+    description: Comandos de administração do clearlag
+    aliases: [ lixeiro ]
+  pay:
+    description: Envia dinheiro para outro jogador
+  donutcore:
+    description: Comando administrativo do DonutCore
+    aliases: [ dcore, dccore ]
+    permission: donutcore.admin
+  midia:
+    description: Abre o menu de rank Media
+    aliases: [ media ]
+  sellhistory:
+    description: Veja seu histórico de vendas
+  help:
+    description: Veja informações e ajuda sobre o servidor
+    aliases: [ ajuda ]
+  fragmentos:
+    description: Veja a quantidade de fragmentos (shards) sua ou de outros jogadores
+    aliases: [ fragmento, shards, shard ]
+  fragmentopay:
+    description: Envie fragmentos (shards) para outro jogador
+  findplayer:
+    description: Localize em qual mundo ou área outro jogador está
+  discord:
+    description: Mostra o link do discord do servidor
+  loja:
+    description: Mostra o link da loja do servidor
+  nightvision:
+    description: Ative ou desative a visão noturna infinita
+    aliases: [ luz ]
+  tell:
+    description: Envie uma mensagem privada para outro jogador
+    aliases: [ msg, w ]
+  r:
+    description: Responder à última mensagem privada recebida
+    aliases: [ reply ]
+  ignore:
+    description: Ignorar mensagens e tells de um jogador
+    aliases: [ ignorar ]
+  blocktell:
+    description: Bloquear/desbloquear recebimento de tells
+    aliases: [ bloqueartell ]
+  shardmanager:
+    description: Gerencia os fragmentos (shards) dos jogadores
+    permission: donutcore.admin
+  moneymanager:
+    description: Gerencia o dinheiro (money) dos jogadores
+    permission: donutcore.admin
+  playermanager:
+    description: Gerencia as informações, stats e homes dos jogadores
+    permission: donutcore.playermanager
+  stash:
+    description: Invoca uma estrutura de stash (1, 2 ou aleatória) na sua localização
+    permission: donutcore.admin
+  warp:
+    description: Teleporta para uma warp criada no servidor
+  warpmanager:
+    description: Gerencia as warps do servidor
+    permission: donutcore.admin
+
+permissions:
+
+  donutcore.endersee:
+    description: Permissão para ver o Ender Chest dos jogadores via /endersee
+    default: op
+  donutcore.playermanager:
+    description: Permissão para acessar o comando /playermanager
+    default: op
+  donutcore.home.1:
+    description: Permissão para ter e usar a Home 1
+    default: op
+  donutcore.home.2:
+    description: Permissão para ter e usar a Home 2
+    default: op
+  donutcore.home.3:
+    description: Permissão para ter e usar a Home 3
+    default: op
+  donutcore.home.4:
+    description: Permissão para ter e usar a Home 4
+    default: op
+  donutcore.home.5:
+    description: Permissão para ter e usar a Home 5
+    default: op
+  donutcore.admin:
+    description: Permissão administrativa total do DonutCore
+    default: op
+    children:
+      donutcore.endersee: true
+      donutcore.playermanager: true
+      donutcore.home.1: true
+      donutcore.home.2: true
+      donutcore.home.3: true
+      donutcore.home.4: true
+      donutcore.home.5: true
+

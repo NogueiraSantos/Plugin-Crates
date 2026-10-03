@@ -1,0 +1,390 @@
+LOCATIONS:
+  SPAWN-LOCATION: ''
+  AFK-LOCATION: ''
+
+# Settings
+SETTINGS:
+  CHAT-FORMAT: true
+  RESPAWN-ON-BED: false
+  TELEPORT-COUNTDOWN-MESSAGE: true
+  TELEPORT-COUNTDOWN-ACTIONBAR: true
+  CHAINMAIL-ON-RESPAWN: true
+  CHAINMAIL-RESPAWN-ITEMS:
+    - MATERIAL: STONE_SWORD
+      AMOUNT: 1
+    - MATERIAL: CHAINMAIL_HELMET
+      NAME: '&eChainmail Helmet'
+      AMOUNT: 1
+    - MATERIAL: CHAINMAIL_CHESTPLATE
+      NAME: '&eChainmail Chestplate'
+      AMOUNT: 1
+    - MATERIAL: CHAINMAIL_LEGGINGS
+      NAME: '&eChainmail Leggings'
+      AMOUNT: 1
+    - MATERIAL: CHAINMAIL_BOOTS
+      NAME: '&eChainmail Boots'
+      AMOUNT: 1
+    - MATERIAL: COOKED_BEEF
+      AMOUNT: 16
+  HOME-DEFAULT: 2 # Default slots
+  SHARDS-PER-KILL: 1 # aqui é quando eu mato o jogador ganho um shard
+  SHARDS-KILL-COOLDOWN: 120 # aqui tenho que esperar esse cooldown pra poder ganhar de novo quando eu matar o jogador
+  SHARDS-KILL-MESSAGE: '&#A303F9+{shards} Fragmento'
+  SELL-MULTIPLIER: true
+  MONEY-PER-DEFAULT: 1000.0
+  SELL-MESSAGE: '&a+$%price%'
+  SPAWN-MENU: true
+  AFK-MENU: true
+  WORTH-DEFAULT-VALUE: 1.0
+  # Player Settings
+  MOB-SPAWN-RADIUS: 50
+  MOB-SPAWN-BLACKLIST: # aqui bloqueia o spawn de certos mobs no servidor
+    - ENEMY
+    - MONSTER
+    - SLIME
+    - BAT
+  PHANTOM-SPAWN-RADIUS: 40
+  DOUBLE-JUMP: true # esse double jump só deve funcionar quando estiver dentro do spawn
+
+CHAT-FORMAT:
+  CHAT: '&f%prefix%%player%&7: &#FFFFFF%message%'
+  HOVER-LORE:
+    - '%prefix%%player%'
+    - '&7&m----------'
+    - '&#00FC00&l$ &fᴍᴏɴᴇʏ &#00FC00%money%'
+    - '&#FC0000⚔ &fᴋɪʟʟѕ &#FC0000%kills%'
+    - '&#FCE300⌚ &fᴘʟᴀʏᴛɪᴍᴇ &#FCE300%playtime%'
+    - '&#F97603☠ &fᴅᴇᴀᴛʜѕ &#F97603%deaths%'
+    - '&#DF9FFF★ &fꜰʀᴀɢᴍᴇɴᴛᴏѕ &#DF9FFF%shards%'
+    - '&7&m----------'
+    - '&7ᴄʟɪǫᴜᴇ ᴘʀᴀ ᴇɴᴠɪᴀʀ ᴍᴇɴѕᴀɢᴇᴍ'
+
+PROFILE:
+  ENABLED: true
+  SAVE-EVERY: 15 # In minutes
+  CONSOLE-MESSAGE: '&b&l[Profile] &a{profiles} &fprofiles were saved &asuccessfully&f.'
+
+AFK-SYSTEM:
+  ENABLED: true
+  TIME: 180 # In seconds (3 minutes)
+  SPAWN-CUBOID-NAME: spawn
+  MESSAGE: '&7Você foi movido para a área de AFK por estar inativo no spawn.'
+# essa função acho que voce ja sabe pra que server ne (pra quando o player ficar afk no spawn depois de um tempo ir para o afk)
+
+LORE-PRICE:
+  ENABLED: true
+  FORMAT: '&7Preço: &a${price}'
+  BLOCK-CUSTOM-NBT-ITEMS: true
+  BLOCK-ITEMS:
+    - SPAWNER
+    - VAULT
+
+WORTH-LORE:
+  ENABLED: true
+  FORMAT: '&7Preço: &a${price}'
+
+END-CRYSTAL:
+  ENABLED: false
+  DAMAGE: 2.0
+# aqui controla o dano do crystal
+
+RESPAWN-ANCHOR:
+  ENABLED: false
+  DAMAGE: 2.0
+# aqui controla o dano da ãncora
+
+ENDER-CHEST:
+  SIX-ROW: false
+# aqui se eu desativar o enderchest fica o enderchest normal mas quando eu ativar isso o enderchest fica com 54 slots
+
+# Sistema de Links do Servidor (Menu ESC Pause do Minecraft 1.21+ / Dialog API nativa)
+SERVER-LINKS:
+  ENABLED: true
+  DISCORD:
+    ENABLED: true
+    NAME: '&#5865F2Discord'
+    URL: 'https://dc.gg/aureliumshields'
+    TYPE: 'COMMUNITY'
+    USE-BUILTIN-TRANSLATION: false
+  SITE:
+    ENABLED: true
+    NAME: '&#00FFAASite Oficial'
+    URL: 'https://aureliumshields.net'
+    TYPE: 'WEBSITE'
+    USE-BUILTIN-TRANSLATION: false
+  YOUTUBE:
+    ENABLED: true
+    NAME: '&#FF0000YouTube'
+    URL: 'https://youtube.com/@aureliumshields'
+    TYPE: 'NEWS'
+    USE-BUILTIN-TRANSLATION: false
+  LOJA:
+    ENABLED: true
+    NAME: '&#FFD700Loja'
+    URL: 'https://loja.aureliumshields.net'
+    USE-BUILTIN-TRANSLATION: false
+  CUSTOM-LINKS: []
+
+# Lunar client modules
+LUNAR-CLIENT:
+  RICH-PRESENCE:
+    ENABLED: true
+    UPDATE: 1 # In minutes
+    PLAYER-STATE: Playing
+    GAME-STATE: Playing
+    GAME-NAME: Economy
+    VARIANT: '%donutcore_username% ($%donutcore_nicestMoney%)'
+    WORLD-NAME: Aurelium Shields
+  TEAM-VIEW:
+    ENABLED: true
+    UPDATE: 20 # In ticks: 20 = 1 sec
+# vamos dar vida agora a essa função do lunar client para o nosso servidor
+
+SHARDS:
+  EVERY: 1 # In minutes
+  AMOUNT: 2 # shards
+  COUNTDOWN: '&fPróximo fragmento em &#DF9FFF%time%s'
+  RECEIVED: '&#DF9FFF+%amount% Fragmento(s)'
+  EVERYWHERE:
+    ENABLED: true
+    EVERY: 3
+    AMOUNT: 1
+    EXCLUDED-WORLDS:
+      - duels
+  BOOSTER-MULTIPLIER: 10 # Amethyst Potion
+
+KEY-ALL:
+  ENABLED: true
+  EVERY: 60 # In minutes
+  COMMANDS:
+    - ''
+  MESSAGE:
+    - ''
+    - '&aYou received a reward!'
+    - '&#ff0000Thanks for playing on our server!'
+    - ''
+
+TEAM:
+  NAME-MIN-LENGTH: 3
+  NAME-MAX-LENGTH: 5
+  LIMIT-MEMBERS: 10
+  ALLY-DAMAGE-RANGE: 5.0
+  RESTRICTED-NAMES:
+    - boing
+
+LEADERBOARD:
+  UPDATE: 10 # In minutes
+  NPC-REFRESH: 1 # In minutes
+
+TABLIST:
+  ENABLED: true
+  LUCKPERMS-PRIORITY: true
+  SHOW-TEAM-NAME: false
+  TEAM-FORMAT: " &7[%team%]"
+  FORMAT: '%prefix%%player%%team%%suffix%'
+  HEADER: |2
+
+    %img_logo%
+  
+    &f%online% Players
+  FOOTER: |2
+
+    &#FFF000/&#FFF32Aᴅ&#FFF555ɪ&#FFF87Fѕ&#FFFAA9ᴄ&#FFF77Cᴏ&#FFF54Fʀ&#FFF222ᴅ  &#FFF000/&#FFF338ᴀ&#FFF771ᴊ&#FFFAA9ᴜ&#FFF666ᴅ&#FFF222ᴀ  &#FFF000/&#FFF555ʟ&#FFFAA9ᴏ&#FFF666ᴊ&#FFF222ᴀ
+
+CLEAR-LAG:
+  ENABLED: true
+  EVERY: 5 # In minutes
+  ANIMALS: true
+  MONSTERS: true
+  DROPPED-ITEMS: true
+  EXCLUDED-WORLDS:
+    - duels
+
+COMBAT-MANAGER:
+  ENABLED: true
+  COOLDOWN: 16 # In seconds
+  ACTION-BAR: '&fCombat: &b${time}s'
+  ENDER-CRYSTAL: true
+  ENDER-PEARL: true
+  RESPAWN-ANCHOR: true
+  WIND-CHARGE: true
+  SPEAR: true
+  BLOCK-INTERACTIONS:
+    ENABLED: true
+    ITEMS:
+      - FIREWORK_ROCKET
+  ANTI-STASIS-CHAMBER:
+    ENABLED: true
+    MAX-DISTANCE: 500
+    PREVENT-WORLD-CHANGE: true
+  BLOCK-MESSAGE: '&cYou can''t use this command in your current status.'
+  BLOCK-COMMANDS:
+    - /spawn
+    - /afk
+    - /rtp
+    - /homes
+    - /tpa
+  EXCLUDED-WORLDS:
+    - duels
+# Aqui em COMBATE-MANAGER vamos arrumar ele pra poder ficar bem clean e lógico ok? segue as seguintes informações:
+# ENDER-CRYSTAL: true < esse sistema é pra quando o outro jogador explodir com o crystal o outro jogador ai vai contar como combate
+# ENDER-PEARL: true < quando for jogar a enderpear é pra contar como se estivesse em pvp, mas só conta quando o endepearl acertar no player e dar dano... tipo EU joguei no player e der dano conta como a gente tá em combate
+# RESPAWN-ANCHOR: true < esse sistema é pra quando o outro jogador explodir a âncora no outro jogador ai vai contar como combate
+# WIND-CHARGE: true < quando o player acertar o windcharge e der dano ao outro player conta como se estivesse no pvp
+# SPEAR: true < quando a lança acerta no player conta como se estivesse no pvp
+
+RTP-ZONE:
+  ENABLED: true
+  EVERY: 30 # In seconds
+  TITLE: '&#FF2C2C&lᴢᴏɴᴀ ʀᴛᴘ'
+  SUB-TITLE: '&fTeleportando em %countdown%'
+  WORLD:
+    NAME: world
+    MIN-RADIUS: 500
+    MAX-RADIUS: 2000
+
+TELEPORT-COOLDOWN:
+  HOME: 5 # In seconds
+  TEAM-HOME: 5
+  SPAWN: 5
+  AFK: 5
+  TPA: 5
+  WARP: 5
+  RTP: 5
+
+BOUNTY: # aqui é onde o o bounty não vai funcionar que no caso tá como duels pra não funcionar
+  EXCLUDED-WORLDS:
+    - duels
+
+AMETHYST-TOOLS:
+  EXCLUDED-WORLDS:
+    - duels
+  PICKAXE:
+    PARTICLE:
+      NAME: FALLING_DUST
+      MATERIAL: PURPLE_CONCRETE_POWDER
+      AMOUNT: 10
+    DISABLED-BLOCKS:
+      - GRASS_BLOCK
+      - DIRT_PATH
+      - DIRT
+      - COARSE_DIRT
+      - ROOTED_DIRT
+      - CLAY
+      - FARMLAND
+      - SAND
+      - RED_SAND
+      - GRAVEL
+      - SPAWNER
+    NAME: '&#A303F9ᴀᴍᴇᴛʜʏѕᴛ ᴅʀɪʟʟ'
+    LORE:
+      - '&7Quebra 9 blocos de uma vez!'
+      - '&8Auto Destruição'
+      - '&8{time}'
+    ENCHANTMENTS:
+      - MENDING:1
+      - EFFICIENCY:5
+      - UNBREAKING:3
+  AXE:
+    PARTICLE:
+      NAME: FALLING_DUST
+      MATERIAL: PURPLE_CONCRETE_POWDER
+      AMOUNT: 10
+    NAME: '&#A303F9ᴀᴍᴇᴛʜʏѕᴛ ᴛʀᴇᴇ ᴄʜᴏᴘᴘᴇʀ'
+    LORE:
+      - '&7Quebra árvores em instantes'
+      - '&8Auto Destruição'
+      - '&8{time}'
+    ENCHANTMENTS:
+      - MENDING:1
+      - EFFICIENCY:5
+      - UNBREAKING:3
+      - SILK_TOUCH:1
+  SELLAXE:
+    PARTICLE:
+      NAME: FALLING_DUST
+      MATERIAL: PURPLE_CONCRETE_POWDER
+      AMOUNT: 10
+    NAME: '&#A303F9ᴀᴍᴇᴛʜʏѕᴛ ѕᴇʟʟ ᴀxᴇ'
+    LORE:
+      - '&7Vende qualquer item do baú instantâneo'
+      - '&8Auto Destruição'
+      - '&8{time}'
+    ENCHANTMENTS:
+      - MENDING:1
+      - EFFICIENCY:5
+      - UNBREAKING:3
+  SHOVEL:
+    PARTICLE:
+      NAME: FALLING_DUST
+      MATERIAL: PURPLE_CONCRETE_POWDER
+      AMOUNT: 10
+    ALLOWED-BLOCKS:
+      - GRASS_BLOCK
+      - DIRT_PATH
+      - DIRT
+      - COARSE_DIRT
+      - ROOTED_DIRT
+      - CLAY
+      - FARMLAND
+      - SAND
+      - RED_SAND
+      - GRAVEL
+    NAME: '&#A303F9ᴀᴍᴇᴛʜʏѕᴛ ѕʜᴏᴠᴇʟ'
+    LORE:
+      - '&7Quebra 9 blocos de uma vez!'
+      - '&8Auto Destruição'
+      - '&8{time}'
+    ENCHANTMENTS:
+      - MENDING:1
+      - EFFICIENCY:5
+      - UNBREAKING:3
+  BUCKET:
+    PARTICLE:
+      NAME: FALLING_DUST
+      MATERIAL: PURPLE_CONCRETE_POWDER
+      AMOUNT: 10
+    NAME: '&#A303F9ᴀᴍᴇᴛʜʏѕᴛ ʙᴜᴄᴋᴇᴛ'
+    LORE:
+      - '&7Drena 60 águas de uma vez!'
+      - '&8Auto Destruição'
+      - '&8{time}'
+    ENCHANTMENTS: []
+  BOOSTER:
+    PARTICLE:
+      NAME: FALLING_DUST
+      MATERIAL: PURPLE_CONCRETE_POWDER
+      AMOUNT: 10
+    NAME: '&#A303F9ѕʜᴀʀᴅ ʙᴏᴏѕᴛᴇʀ'
+    LORE:
+      - '&7Ganhe 4x mais fragmentos no /afk!'
+      - '&8Auto Destruição'
+      - '&8{time}'
+    ENCHANTMENTS: []
+
+COMMANDS:
+  BOUNTY: true
+  CUBOID: true
+  AFK: true
+  SHARDS: true
+  WARP: true
+  TEAM: true
+  HOME: true
+  LEADERBOARDS: true
+  NIGHT-VISION: true
+  PHANTOM: true
+  RTP: true
+  SELL: true
+  SETTINGS: true
+  SHOP: true
+  SOCIAL: true
+  SPAWN: true
+  STATS: true
+  TPA: true
+  TPAUTO: true
+  FINDPLAYER: true
+  SHARDPAY: false
+  RULES: true
+  HELP: true
+  ENDERCHEST-SEE: true
+  SPAWN-STASH: true

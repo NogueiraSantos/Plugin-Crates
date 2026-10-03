@@ -1,0 +1,88 @@
+# You can enable/disable this feature
+ENABLED: true
+
+SETTINGS:
+  # Max players using RTP simultaneously
+  PLAYERS-IN-RTP: 10
+  # Max tries to find a valid RTP location before failing
+  MAX-ATTEMPTS: 16
+
+MESSAGES:
+  # General RTP messages
+  DISABLED: "&cRTP está atualmente desativado."
+  COOLDOWN: "&cVocê tem que esperar {remaining}s pra dar RTP."
+  MAX-PLAYERS: "&cMuito jogadores estão usando RTP. Tente novamente mais tarde."
+  WORLD-NOT-EXIST: "&cEsse mundo não existe."
+  # RTP process messages
+  SEARCHING: "&7Procurando por um local seguro em &#6BF18D{world}..."
+  SAFE-LOCATION-FOUND: "&7Local seguro econtrado: &#6BF18DX:{x} Y:{y} Z:{z}"
+  MAX-ATTEMPTS: "&cNão foi possível encontrar um local seguro depois de %attempts% tentativas."
+  # Menu messages
+  DESTINATION-DISABLED: "&cEste destino de RTP está atualmente desativado."
+  # Safety check messages (for debugging)
+  UNSAFE-LOCATION: "&cO local X:{x} Y:{y} Z:{z} foi rejeitado: {reason}"
+
+# Deny worlds from rtp command
+DENIED-WORLDS:
+  - afk
+
+WORLD-SETTINGS:
+  world: # Overworld name
+    MAX-RADIUS: 5000
+    MIN-RADIUS: 500
+    CENTER-X: 0
+    CENTER-Z: 0
+    COOLDOWN: 30 # In seconds
+  world_nether:
+    MAX-RADIUS: 500
+    MIN-RADIUS: 50
+    CENTER-X: 0
+    CENTER-Z: 0
+    COOLDOWN: 30 # In seconds
+  world_the_end:
+    MAX-RADIUS: 2000
+    MIN-RADIUS: 150
+    CENTER-X: 0
+    CENTER-Z: 0
+    COOLDOWN: 30 # In seconds
+
+RTP-MENU:
+  TITLE: "&8ᴛᴇʟᴇᴘᴏʀᴛᴇ ᴀʟᴇᴀᴛóʀɪᴏ"
+  SIZE: 27
+  BUTTONS:
+    OVERWORLD:
+      DISPLAY-NAME: "&#0CFF00ᴏᴠᴇʀᴡᴏʀʟᴅ"
+      MATERIAL: "GRASS_BLOCK"
+      SLOT: 11
+      WORLD: "world"
+      ENABLED: true
+      LORE:
+        - "&f- Clique para teleportar"
+        - "&faleatóriamente"
+        - ""
+        - "&7Players: &#FFF000{players}"
+        - "&7Ping: &#6BF18D{ping}ms"
+    NETHER:
+      DISPLAY-NAME: "&#FF0000ɴᴇᴛʜᴇʀ"
+      MATERIAL: "NETHERRACK"
+      SLOT: 13
+      WORLD: "world_nether"
+      ENABLED: true
+      LORE:
+        - "&f- Clique para teleportar"
+        - "&faleatóriamente"
+        - ""
+        - "&7Players: &#FFF000{players}"
+        - "&7Ping: &#6BF18D{ping}ms"
+    THE_END:
+      DISPLAY-NAME: "&#F5FF9Dᴛʜᴇ ᴇɴᴅ"
+      MATERIAL: "END_STONE"
+      SLOT: 15
+      WORLD: "world_the_end"
+      ENABLED: true
+      LORE:
+        - "&f- Clique para teleportar"
+        - "&faleatóriamente"
+        - ""
+        - "&7Players: &#FFF000{players}"
+        - "&7Ping: &#6BF18D{ping}ms"

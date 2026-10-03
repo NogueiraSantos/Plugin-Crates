@@ -1,0 +1,653 @@
+CATEGORIES:
+  MENU-TITLE: "&8ѕʜᴏᴘ"
+  MENU-SIZE: 27
+  END:
+    MATERIAL: END_STONE
+    DISPLAY-NAME: "&#F5FF9Dᴛʜᴇ ᴇɴᴅ"
+    SLOT: 11
+    LORE:
+      - "&f- Clique para acessar a loja de &#F5FF9Dᴛʜᴇ ᴇɴᴅ"
+    OPEN-MENU: "{end-menu}"
+  NETHER:
+    MATERIAL: NETHERRACK
+    DISPLAY-NAME: "&#FF0000ɴᴇᴛʜᴇʀ"
+    SLOT: 12
+    LORE:
+      - "&f- Clique para acessar a loja de &#FF0000ɴᴇᴛʜᴇʀ"
+    OPEN-MENU: "{nether-menu}"
+  GEAR:
+    MATERIAL: TOTEM_OF_UNDYING
+    DISPLAY-NAME: "&#FFF000ꜰᴇʀʀᴀᴍᴇɴᴛᴀѕ"
+    SLOT: 13
+    LORE:
+      - "&f- Clique para acessar a loja de &#FFF000ꜰᴇʀʀᴀᴍᴇɴᴛᴀѕ"
+    OPEN-MENU: "{gear-menu}"
+  FOOD:
+    MATERIAL: COOKED_BEEF
+    DISPLAY-NAME: "&#FF6900ᴄᴏᴍɪᴅᴀ"
+    SLOT: 14
+    LORE:
+      - "&f- Clique para acessar a loja de &#FF6900ᴄᴏᴍɪᴅᴀ"
+    OPEN-MENU: "{food-menu}"
+  SHARD:
+    MATERIAL: AMETHYST_SHARD
+    DISPLAY-NAME: "&#DF9FFFꜰʀᴀɢᴍᴇɴᴛᴏѕ"
+    SLOT: 15
+    LORE:
+      - "&f- Clique para acessar a loja de &#DF9FFFꜰʀᴀɢᴍᴇɴᴛᴏѕ"
+    OPEN-MENU: "{shard-menu}"
+  EXTRA-1:
+    ENABLED: false
+    MATERIAL: DIAMOND_ORE
+    DISPLAY-NAME: "&#6BF18DExtra Menu (1)"
+    SLOT: 22
+    LORE:
+      - "&fClick to view extra menu"
+    OPEN-MENU: "{extra-1-menu}"
+  EXTRA-2:
+    ENABLED: false
+    MATERIAL: IRON_ORE
+    DISPLAY-NAME: "&#6BF18DExtra Menu (2)"
+    SLOT: 23
+    LORE:
+      - "&fClick to view extra menu"
+    OPEN-MENU: "{extra-2-menu}"
+  EXTRA-3:
+    ENABLED: false
+    MATERIAL: GOLD_ORE
+    DISPLAY-NAME: "&#6BF18DExtra Menu (3)"
+    SLOT: 24
+    LORE:
+      - "&fClick to view extra menu"
+    OPEN-MENU: "{extra-3-menu}"
+
+# End Shop Menu
+END-MENU:
+  CURRENCY: MONEY
+  TITLE: "&8ѕʜᴏᴘ - ᴇɴᴅ"
+  SIZE: 27
+  ENDER-CHEST-ITEM:
+    MATERIAL: "ENDER_CHEST"
+    DISPLAY-NAME: "&fEnder Chest"
+    SLOT: 9
+    PRICE-PER-UNIT: 2500.0
+    LORE:
+      - "&f- Preço: &a$2,500"
+    COMMAND: ""
+  ENDER-PEARL-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "ENDER_PEARL"
+    DISPLAY-NAME: "&fEnder Pearl"
+    SLOT: 10
+    PRICE-PER-UNIT: 75.0
+    LORE:
+      - "&f- Preço: &a$75"
+    COMMAND: ""
+  END-STONE-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "END_STONE"
+    DISPLAY-NAME: "&fEnd Stone"
+    SLOT: 11
+    PRICE-PER-UNIT: 8.0
+    LORE:
+      - "&f- Preço: &a$8"
+    COMMAND: ""
+  DRAGON-BREATH-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "DRAGON_BREATH"
+    DISPLAY-NAME: "&eDragon's Breath"
+    SLOT: 12
+    PRICE-PER-UNIT: 1000.0
+    LORE:
+      - "&f- Preço: &a$1,000"
+    COMMAND: ""
+  END-ROD-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "END_ROD"
+    DISPLAY-NAME: "&fEnd Rod"
+    SLOT: 13
+    PRICE-PER-UNIT: 100.0
+    LORE:
+      - "&f- Preço: &a$100"
+  CHORUS-FRUIT-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "CHORUS_FRUIT"
+    DISPLAY-NAME: "&fChorus Fruit"
+    SLOT: 14
+    PRICE-PER-UNIT: 10.0
+    LORE:
+      - "&f- Preço: &a$10"
+  POPPED-CHORUS-FRUIT-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "POPPED_CHORUS_FRUIT"
+    DISPLAY-NAME: "&fPopped Chorus Fruit"
+    SLOT: 15
+    PRICE-PER-UNIT: 15.0
+    LORE:
+      - "&f- Preço: &a$15"
+  SHULKER-SHELL-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "SHULKER_SHELL"
+    DISPLAY-NAME: "&fShulker Shell"
+    SLOT: 16
+    PRICE-PER-UNIT: 350.0
+    LORE:
+      - "&f- Preço: &a$350"
+  SHULKER-BOX-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "SHULKER_BOX"
+    DISPLAY-NAME: "&fShulker Box"
+    SLOT: 17
+    PRICE-PER-UNIT: 800.0
+    LORE:
+      - "&f- Preço: &a$800"
+
+# Nether Shop Menu
+NETHER-MENU:
+  TITLE: "&8ѕʜᴏᴘ - ɴᴇᴛʜᴇʀ"
+  SIZE: 27
+  BLAZE-ROD-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "BLAZE_ROD"
+    DISPLAY-NAME: "&fBlaze Rod"
+    SLOT: 9
+    PRICE-PER-UNIT: 150.0
+    LORE:
+      - "&f- Preço: &a$150"
+  NETHER-WART-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "NETHER_WART"
+    DISPLAY-NAME: "&fNether Wart"
+    SLOT: 10
+    PRICE-PER-UNIT: 15
+    LORE:
+      - "&f- Preço: &a$15"
+  GLOWSTONE-DUST-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "GLOWSTONE_DUST"
+    DISPLAY-NAME: "&fGlowstone Dust"
+    SLOT: 11
+    PRICE-PER-UNIT: 15
+    LORE:
+      - "&f- Preço: &a$15"
+  MAGMA-CREAM-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "MAGMA_CREAM"
+    DISPLAY-NAME: "&fMagma Cream"
+    SLOT: 12
+    PRICE-PER-UNIT: 15
+    LORE:
+      - "&f- Preço: &a$15"
+  GHAST-TEAR-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "GHAST_TEAR"
+    DISPLAY-NAME: "&fGhast Tear"
+    SLOT: 13
+    PRICE-PER-UNIT: 350
+    LORE:
+      - "&f- Preço: &a$350"
+  NETHER-QUARTZ-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "QUARTZ"
+    DISPLAY-NAME: "&fNether Quartz"
+    SLOT: 14
+    PRICE-PER-UNIT: 15
+    LORE:
+      - "&f- Preço: &a$15"
+  SOUL-SAND-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "SOUL_SAND"
+    DISPLAY-NAME: "&fSoul Sand"
+    SLOT: 15
+    PRICE-PER-UNIT: 50
+    LORE:
+      - "&f- Preço: &a$50"
+  MAGMA-BLOCK-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "MAGMA_BLOCK"
+    DISPLAY-NAME: "&fMagma Block"
+    SLOT: 16
+    PRICE-PER-UNIT: 35
+    LORE:
+      - "&f- Preço: &a$35"
+  CRYING-OBSIDIAN-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "CRYING_OBSIDIAN"
+    DISPLAY-NAME: "&fCrying Obsidian"
+    SLOT: 17
+    PRICE-PER-UNIT: 150
+    LORE:
+      - "&f- Preço: &a$150"
+
+# Gear Shop Menu
+GEAR-MENU:
+  TITLE: "&8ꜰᴇʀʀᴀᴍᴇɴᴛᴀѕ - ѕʜᴏᴘ"
+  SIZE: 36
+  OBSIDIAN-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "OBSIDIAN"
+    DISPLAY-NAME: "&fObsidian"
+    SLOT: 19
+    PRICE-PER-UNIT: 100
+    LORE:
+      - "&f- Preço: &a$100"
+  END-CRYSTAL-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "END_CRYSTAL"
+    DISPLAY-NAME: "&bEnd Crystal"
+    SLOT: 20
+    PRICE-PER-UNIT: 350
+    LORE:
+      - "&f- Preço: &a$350"
+  RESPAWN-ANCHOR-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "RESPAWN_ANCHOR"
+    DISPLAY-NAME: "&fRespawn Anchor"
+    SLOT: 21
+    PRICE-PER-UNIT: 1000
+    LORE:
+      - "&f- Preço: &a$1000"
+  GLOWSTONE-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "GLOWSTONE"
+    DISPLAY-NAME: "&fGlowstone"
+    SLOT: 22
+    PRICE-PER-UNIT: 100
+    LORE:
+      - "&f- Preço: &a$100"
+  TOTEM-OF-UNDYING-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "TOTEM_OF_UNDYING"
+    DISPLAY-NAME: "&eTotem of Undying"
+    SLOT: 23
+    PRICE-PER-UNIT: 1250
+    LORE:
+      - "&f- Preço: &a$1250"
+  ENDER-PEARL-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "ENDER_PEARL"
+    DISPLAY-NAME: "&fEnder Pearl"
+    SLOT: 24
+    PRICE-PER-UNIT: 75
+    LORE:
+      - "&f- Preço: &a$75"
+  GOLDEN-APPLE-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "GOLDEN_APPLE"
+    DISPLAY-NAME: "&bGolden Apple"
+    SLOT: 25
+    PRICE-PER-UNIT: 250
+    LORE:
+      - "&f- Preço: &a$250"
+  BOTTLE-O-ENCHANTING-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "EXPERIENCE_BOTTLE"
+    DISPLAY-NAME: "&eBottle O' Enchanting"
+    SLOT: 16
+    PRICE-PER-UNIT: 100
+    LORE:
+      - "&f- Preço: &a$100"
+  DIAMOND-HELMET-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "DIAMOND_HELMET"
+    DISPLAY-NAME: "&fDiamond Helmet"
+    SLOT: 10
+    PRICE-PER-UNIT: 10000
+    LORE:
+      - "&f- Preço: &a$10000"
+  DIAMOND-CHESTPLATE-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "DIAMOND_CHESTPLATE"
+    DISPLAY-NAME: "&fDiamond Chestplate"
+    SLOT: 11
+    PRICE-PER-UNIT: 10000
+    LORE:
+      - "&f- Preço: &a$10000"
+  DIAMOND-LEGGINGS-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "DIAMOND_LEGGINGS"
+    DISPLAY-NAME: "&fDiamond Leggings"
+    SLOT: 12
+    PRICE-PER-UNIT: 10000
+    LORE:
+      - "&f- Preço: &a$10000"
+  DIAMOND-BOOTS-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "DIAMOND_BOOTS"
+    DISPLAY-NAME: "&fDiamond Boots"
+    SLOT: 13
+    PRICE-PER-UNIT: 10000
+    LORE:
+      - "&f- Preço: &a$10000"
+  DIAMOND-SWORD-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "DIAMOND_SWORD"
+    DISPLAY-NAME: "&fDiamond Sword"
+    SLOT: 14
+    PRICE-PER-UNIT: 12000
+    LORE:
+      - "&f- Preço: &a$10000"
+  DIAMOND-PICKAXE-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "DIAMOND_PICKAXE"
+    DISPLAY-NAME: "&fDiamond Pickaxe"
+    SLOT: 15
+    PRICE-PER-UNIT: 12000
+    LORE:
+      - "&f- Preço: &a$10000"
+
+# Food Shop Menu
+FOOD-MENU:
+  TITLE: "&8ᴄᴏᴍɪᴅᴀ - ѕʜᴏᴘ"
+  SIZE: 27
+  POTATO-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "POTATO"
+    DISPLAY-NAME: "&fPotato"
+    SLOT: 9
+    PRICE-PER-UNIT: 75
+    LORE:
+      - "&f- Preço: &a$75"
+  SWEET-BERRIES-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "SWEET_BERRIES"
+    DISPLAY-NAME: "&fSweet Berries"
+    SLOT: 10
+    PRICE-PER-UNIT: 50
+    LORE:
+      - "&f- Preço: &a$50"
+  MELON-SLICE-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "MELON_SLICE"
+    DISPLAY-NAME: "&fMelon Slice"
+    SLOT: 11
+    PRICE-PER-UNIT: 10
+    LORE:
+      - "&f- Preço: &a$10"
+  CARROT-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "CARROT"
+    DISPLAY-NAME: "&fCarrot"
+    SLOT: 12
+    PRICE-PER-UNIT: 65
+    LORE:
+      - "&f- Preço: &a$65"
+  APPLE-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "APPLE"
+    DISPLAY-NAME: "&fApple"
+    SLOT: 13
+    PRICE-PER-UNIT: 25
+    LORE:
+      - "&f- Preço: &a$25"
+  COOKED-CHICKEN-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "COOKED_CHICKEN"
+    DISPLAY-NAME: "&fCooked Chicken"
+    SLOT: 14
+    PRICE-PER-UNIT: 30
+    LORE:
+      - "&f- Preço: &a$30"
+  STEAK-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "COOKED_BEEF"
+    DISPLAY-NAME: "&fSteak"
+    SLOT: 15
+    PRICE-PER-UNIT: 35
+    LORE:
+      - "&f- Preço: &a$35"
+  GOLDEN-CARROT-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "GOLDEN_CARROT"
+    DISPLAY-NAME: "&fGolden Carrot"
+    SLOT: 16
+    PRICE-PER-UNIT: 50
+    LORE:
+      - "&f- Preço: &a$50"
+  GOLDEN-APPLE-ITEM:
+    CURRENCY: MONEY
+    MATERIAL: "GOLDEN_APPLE"
+    DISPLAY-NAME: "&bGolden Apple"
+    SLOT: 17
+    PRICE-PER-UNIT: 250
+    LORE:
+      - "&f- Preço: &a$250"
+
+# Shard Shop Menu
+SHARD-MENU:
+  TITLE: "&8ꜰʀᴀɢᴍᴇɴᴛᴏѕ - ѕʜᴏᴘ"
+  SIZE: 27
+  PIG-SPAWNER-ITEM:
+    CURRENCY: SHARD
+    MATERIAL: "SPAWNER"
+    DISPLAY-NAME: "&#DF9FFFPig Spawner"
+    SLOT: 9
+    PRICE-PER-UNIT: 250.0
+    COMMAND: "spawner give %player% pig %amount%"
+    LORE:
+      - "&f- Preço: &#DF9FFF250 Fragmentos"
+  COW-SPAWNER-ITEM:
+    CURRENCY: SHARD
+    MATERIAL: "SPAWNER"
+    DISPLAY-NAME: "&#DF9FFFCow Spawner"
+    SLOT: 10
+    PRICE-PER-UNIT: 500.0
+    COMMAND: "spawner give %player% cow %amount%"
+    LORE:
+      - "&f- Preço: &#DF9FFF500 Fragmentos"
+  ZOMBIE-SPAWNER-ITEM:
+    CURRENCY: SHARD
+    MATERIAL: "SPAWNER"
+    DISPLAY-NAME: "&#DF9FFFZombie Spawner"
+    SLOT: 11
+    PRICE-PER-UNIT: 1000.0
+    COMMAND: "spawner give %player% zombie %amount%"
+    LORE:
+      - "&f- Preço: &#DF9FFF1000 Fragmentos"
+  SKELETON-SPAWNER-ITEM:
+    CURRENCY: SHARD
+    MATERIAL: "SPAWNER"
+    DISPLAY-NAME: "&#DF9FFFSkeleton Spawner"
+    SLOT: 12
+    PRICE-PER-UNIT: 1500.0
+    COMMAND: "spawner give %player% skeleton %amount%"
+    LORE:
+      - "&f- Preço: &#DF9FFF1500 Fragmentos"
+  BLAZE-SPAWNER-ITEM:
+    CURRENCY: SHARD
+    MATERIAL: "SPAWNER"
+    DISPLAY-NAME: "&#DF9FFFBlaze Spawner"
+    SLOT: 13
+    PRICE-PER-UNIT: 3000.0
+    COMMAND: "spawner give %player% blaze %amount%"
+    LORE:
+      - "&f- Preço: &#DF9FFF3000 Fragmentos"
+  IRON-GOLEM-SPAWNER-ITEM:
+    CURRENCY: SHARD
+    MATERIAL: "SPAWNER"
+    DISPLAY-NAME: "&#DF9FFFIron Golem Spawner"
+    SLOT: 14
+    PRICE-PER-UNIT: 10000.0
+    COMMAND: "spawner give %player% irongolem %amount%"
+    LORE:
+      - "&f- Preço: &#DF9FFF10000 Fragmentos"
+
+EXTRA-1-MENU:
+  TITLE: "&8ᴇхᴛʀᴀ ѕʜᴏᴘ (1) - Ores"
+  SIZE: 27
+  ITEM-1:
+    CURRENCY: MONEY
+    MATERIAL: "DIAMOND"
+    DISPLAY-NAME: "&bDiamond"
+    SLOT: 10
+    PRICE-PER-UNIT: 500
+    LORE:
+      - "&fBuy price: &a$500"
+  ITEM-2:
+    CURRENCY: MONEY
+    MATERIAL: "EMERALD"
+    DISPLAY-NAME: "&aEmerald"
+    SLOT: 11
+    PRICE-PER-UNIT: 400
+    LORE:
+      - "&fBuy price: &a$400"
+  ITEM-3:
+    CURRENCY: MONEY
+    MATERIAL: "NETHERITE_INGOT"
+    DISPLAY-NAME: "&5Netherite Ingot"
+    SLOT: 12
+    PRICE-PER-UNIT: 5000
+    LORE:
+      - "&fBuy price: &a$5,000"
+  ITEM-4:
+    CURRENCY: MONEY
+    MATERIAL: "GOLD_BLOCK"
+    DISPLAY-NAME: "&eGold Block"
+    SLOT: 13
+    PRICE-PER-UNIT: 1800
+    LORE:
+      - "&fBuy price: &a$1,800"
+  ITEM-5:
+    CURRENCY: MONEY
+    MATERIAL: "IRON_BLOCK"
+    DISPLAY-NAME: "&fIron Block"
+    SLOT: 14
+    PRICE-PER-UNIT: 900
+    LORE:
+      - "&fBuy price: &a$900"
+  ITEM-6:
+    CURRENCY: MONEY
+    MATERIAL: "LAPIS_LAZULI"
+    DISPLAY-NAME: "&9Lapis Lazuli"
+    SLOT: 15
+    PRICE-PER-UNIT: 50
+    LORE:
+      - "&fBuy price: &a$50"
+  ITEM-7:
+    CURRENCY: MONEY
+    MATERIAL: "REDSTONE_BLOCK"
+    DISPLAY-NAME: "&cRedstone Block"
+    SLOT: 16
+    PRICE-PER-UNIT: 150
+    LORE:
+      - "&fBuy price: &a$150"
+
+EXTRA-2-MENU:
+  TITLE: "&8ᴇхᴛʀᴀ ѕʜᴏᴘ (2) - Utility & PVP"
+  SIZE: 27
+  ITEM-1:
+    CURRENCY: MONEY
+    MATERIAL: "GOLDEN_APPLE"
+    DISPLAY-NAME: "&6Golden Apple"
+    SLOT: 10
+    PRICE-PER-UNIT: 250
+    LORE:
+      - "&fBuy price: &a$250"
+  ITEM-2:
+    CURRENCY: MONEY
+    MATERIAL: "ENCHANTED_GOLDEN_APPLE"
+    DISPLAY-NAME: "&dEnchanted Golden Apple"
+    SLOT: 11
+    PRICE-PER-UNIT: 10000
+    LORE:
+      - "&fBuy price: &a$10,000"
+  ITEM-3:
+    CURRENCY: MONEY
+    MATERIAL: "ENDER_PEARL"
+    DISPLAY-NAME: "&3Ender Pearl"
+    SLOT: 12
+    PRICE-PER-UNIT: 100
+    LORE:
+      - "&fBuy price: &a$100"
+  ITEM-4:
+    CURRENCY: MONEY
+    MATERIAL: "EXPERIENCE_BOTTLE"
+    DISPLAY-NAME: "&aBottle o' Enchanting"
+    SLOT: 13
+    PRICE-PER-UNIT: 200
+    LORE:
+      - "&fBuy price: &a$200"
+  ITEM-5:
+    CURRENCY: MONEY
+    MATERIAL: "TOTEM_OF_UNDYING"
+    DISPLAY-NAME: "&eTotem of Undying"
+    SLOT: 14
+    PRICE-PER-UNIT: 15000
+    LORE:
+      - "&fBuy price: &a$15,000"
+  ITEM-6:
+    CURRENCY: MONEY
+    MATERIAL: "ELYTRA"
+    DISPLAY-NAME: "&7Elytra"
+    SLOT: 15
+    PRICE-PER-UNIT: 25000
+    LORE:
+      - "&fBuy price: &a$25,000"
+  ITEM-7:
+    CURRENCY: MONEY
+    MATERIAL: "SHULKER_BOX"
+    DISPLAY-NAME: "&dShulker Box"
+    SLOT: 16
+    PRICE-PER-UNIT: 5000
+    LORE:
+      - "&fBuy price: &a$5,000"
+
+EXTRA-3-MENU:
+  TITLE: "&8ᴇхᴛʀᴀ ѕʜᴏᴘ (3) - Special Blocks"
+  SIZE: 27
+  ITEM-1:
+    CURRENCY: MONEY
+    MATERIAL: "OBSIDIAN"
+    DISPLAY-NAME: "&5Obsidian"
+    SLOT: 10
+    PRICE-PER-UNIT: 100
+    LORE:
+      - "&fBuy price: &a$100"
+  ITEM-2:
+    CURRENCY: MONEY
+    MATERIAL: "BEACON"
+    DISPLAY-NAME: "&bBeacon"
+    SLOT: 11
+    PRICE-PER-UNIT: 50000
+    LORE:
+      - "&fBuy price: &a$50,000"
+  ITEM-3:
+    CURRENCY: MONEY
+    MATERIAL: "SPONGE"
+    DISPLAY-NAME: "&eSponge"
+    SLOT: 12
+    PRICE-PER-UNIT: 500
+    LORE:
+      - "&fBuy price: &a$500"
+  ITEM-4:
+    CURRENCY: MONEY
+    MATERIAL: "SEA_LANTERN"
+    DISPLAY-NAME: "&3Sea Lantern"
+    SLOT: 13
+    PRICE-PER-UNIT: 150
+    LORE:
+      - "&fBuy price: &a$150"
+  ITEM-5:
+    CURRENCY: MONEY
+    MATERIAL: "GLOWSTONE"
+    DISPLAY-NAME: "&eGlowstone"
+    SLOT: 14
+    PRICE-PER-UNIT: 80
+    LORE:
+      - "&fBuy price: &a$80"
+  ITEM-6:
+    CURRENCY: MONEY
+    MATERIAL: "DRAGON_EGG"
+    DISPLAY-NAME: "&dDragon Egg"
+    SLOT: 15
+    PRICE-PER-UNIT: 100000
+    LORE:
+      - "&fBuy price: &a$100,000"
+  ITEM-7:
+    CURRENCY: MONEY
+    MATERIAL: "SPAWNER"
+    DISPLAY-NAME: "&4Monster Spawner"
+    SLOT: 16
+    PRICE-PER-UNIT: 75000
+    LORE:
+      - "&fBuy price: &a$75,000"

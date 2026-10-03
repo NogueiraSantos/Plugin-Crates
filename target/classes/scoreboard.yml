@@ -1,0 +1,19 @@
+SCOREBOARD:
+  ENABLED: true
+  TITLE-UPDATE-TICKS: 2
+  TEAM: "<shadow:#000000FF>&#FFF995🪓 &fTeam &#FFF995%donutcore_team%"
+  SHARD-BOOSTER: "<shadow:#000000FF> &#A303F9&l⚡ &fBooster &#A303F9%donutcore_booster_countdown%"
+  TITLE:
+    - "<shadow:#000000FF>%img_logo%"
+  LINES:
+    - ""
+    - "<shadow:#000000FF>&#00FC00&l$ &fMoney &#00FC00%donutcore_nicestMoney%"
+    - "<shadow:#000000FF>&#DF9FFF★ &fFragmentos &#DF9FFF%donutcore_shards%"
+    - "<shadow:#000000FF>&#FC0000⚔ &fKills &#FC0000%donutcore_kills%"
+    - "<shadow:#000000FF>&#F97603☠ &fDeaths &#F97603%donutcore_deaths%"
+    - "<shadow:#000000FF>&#FFF995⌛ &fKeyall &#FFF995%donutcore_keyall_countdown%"
+    - "<shadow:#000000FF>&#FCE300⌚ &fPlaytime &#FCE300%donutcore_playtime%"
+    - "<shadow:#000000FF> {team}"
+    - "<shadow:#000000FF> {shard_booster}"
+    - ""
+    - "<shadow:#000000FF>&#FFF557b&#FFF664u&#FFF770t&#FFF87Dt&#FFF88Ae&#FFF996r&#FFFAA3s&#FFF996m&#FFF88Ap&#FFF87D.&#FFF770n&#FFF664e&#FFF557t &7▶ (&#FFF557%donutcore_ping%&#FFF557m&#FFFAA3s&7)"

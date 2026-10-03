@@ -1,0 +1,198 @@
+TEAM:
+  NO-TEAM: "&cVocê não está em um team. Digite &e/team create <nome> &cpara criar um!"
+  ALREADY-EXISTS: "&cVocê não pode criar um team com esse nome, pois ele já está em uso."
+  TEAM-CREATED: "&aTeam criado com sucesso!"
+  TEAM-DISBANDED: "&7O seu team foi desfeito."
+  ALREADY-IN-TEAM: "&cVocê já está participando de um team."
+  NOT-LEADER: "&cApenas o líder do team pode executar esta ação."
+  PLAYER-NO-INVITES: "&cEste jogador não aceita convites de team no momento."
+  PLAYER-IN-TEAM: "&cO jogador &#FFF000{player} &cjá pertence a um team."
+  TEAM-FULL: "&cO seu team já atingiu o limite máximo de membros!"
+  INVITE-SENT: "&eVocê convidou &#FFF000{player} &epara se juntar ao team."
+  NO-PENDING-INVITES: "&cVocê não tem convites pendentes para o team &6{team}&c."
+  JOIN-SUCCESS: "&aVocê entrou com sucesso no team &#6BF18D{team}&a!"
+  CANT-KICK-SELF: "&cVocê não pode expulsar a si mesmo do team!"
+  KICK-SUCCESS: "&aO jogador &#FFF000{player} &afoi expulso do team com sucesso."
+  KICKED-FROM-TEAM: "&cVocê foi expulso do seu team atual."
+  PLAYER-NOT-IN-TEAM: "&cO jogador &#FFF000{player} &cnão é membro do seu team."
+  TEAM-CHAT-ENABLED: "&aVocê ativou o modo de chat exclusivo do team."
+  TEAM-CHAT-DISABLED: "&cVocê desativou o modo de chat do team."
+  NO-TEAM-HOME: "&cO seu team ainda não possui uma home definida."
+  TEAM-HOME-DELETED: "&7A home do seu team foi deletada."
+  TEAM-HOME-SET: "&aA home do team foi definida no seu local atual!"
+  TEAM-NOT-EXIST: "&cO jogador ou team informado não existe."
+  RESTRICTED-NAME: "&cEste nome de team não é permitido."
+  INVITED-TO-JOIN: "&7Você recebeu um convite para se juntar ao team &#6BF18D{team}&7!"
+  CLICK-TO-JOIN: "&a[Clique para entrar]"
+  HOVER-JOIN: "&eClique para aceitar o convite e entrar no team &#6BF18D{team}&e."
+  OR-TYPE-COMMAND: "&7Ou digite o comando &f{command} &7para entrar."
+  JOINED-BROADCAST: "&#FFF000{player} &aentrou no team!"
+
+TPAUTO:
+  ENABLED: "&aVocê ativou o teleporte automático."
+  DISABLED: "&cVocê desativou o teleporte automático."
+
+PHANTOM:
+  ENABLED: "&cVocê desativou o spawn de Phantoms ao seu redor."
+  DISABLED: "&aVocê ativou novamente o spawn de Phantoms ao seu redor."
+
+CLEAR-LAG:
+  STATUS: "&7Próxima passada do &#FFCB78Lixeiro &7será em &#FFCB78{time}"
+  COUNTDOWN: "&7O &#FFCB78Lixeiro &7vai passar em &#FFCB78{time} &7para limpar os itens do chão"
+  SUCCESS: "&7Total de &#FFCB78{total} &7entidades e itens foram limpos."
+
+TELEPORT:
+  SUCCESS: "&aTeleporte concluído com sucesso!"
+  COUNTDOWN: "&7Teleportando em &#FFF000{seconds} &7segundos"
+  CANCELED: "&cTeleporte cancelado por causa de movimento ou combate."
+
+SHARD-BOOSTER:
+  ACTIVATED: "&dVocê ativou um &5Booster de Shards &dcom duração de &f24 horas&d!"
+  ALREADY-ACTIVATED: "&cVocê já possui um Booster de Shards ativo."
+  EXPIRED: "&7O seu Booster de Shards &cexpirou&7."
+
+SELL-MULTIPLIER:
+  LEVEL-UP:
+    - ""
+    - " &#6BF18D&lMULTIPLICADOR DE VENDA"
+    - " &7Seu multiplicador em &#6BF18D{category} &7subiu de nível!"
+    - " &7Novo nível: &#6BF18D{level} &8| &7Novo multiplicador: &#6BF18D{multiplier}x"
+    - ""
+
+TPA:
+  INVITE-SENT: "&7Pedido de teleporte enviado para &#FFF000{player}&7."
+  INVITE-RECEIVED: "&#FFF000{player} &7enviou um pedido para se teleportar até você."
+  CLICK-TO-ACCEPT: "&a[Clique para aceitar]"
+  CLICK-TO-DENY: "&c[Clique para recusar]"
+  ACCEPTED: "&aVocê aceitou o pedido de teleporte."
+  YOU-ACCEPTED: "&aVocê aceitou o pedido de teleporte de &#FFF000{player}&a."
+  DENIED: "&cVocê recusou o pedido de teleporte."
+  NO-PENDING: "&cVocê não possui nenhum pedido de teleporte pendente."
+  PLAYER-OFFLINE: "&cEste jogador não está mais online."
+
+BOUNTY:
+  CANNOT-SET-SELF: "&cVocê não pode colocar recompensa em si mesmo."
+  ADDED: "&7Bounty de &a${amount} &7adicionado para &#FFF000{player}&7!"
+  CLAIMED: "&#FFF000{killer} &7recebeu a recompensa de &a${amount} &7pela cabeça de &#FFF000{victim}&7!"
+  NOT-ENOUGH-MONEY: "&cVocê não possui dinheiro suficiente para colocar este bounty."
+  MINIMUM-AMOUNT: "&cA quantidade mínima para mandar bounty é de &a$100&c."
+
+ECONOMY:
+  PAY-SUCCESS: "&aVocê enviou &2${amount} &apara &#FFF000{player}&a."
+  PAY-RECEIVED: "&aVocê recebeu &2${amount} &ade &#FFF000{player}&a!"
+  MONEY-SENT: "&aVocê enviou &2${amount} &apara &#FFF000{player}&a."
+  MONEY-RECEIVED: "&aVocê recebeu &2${amount} &ade &#FFF000{player}&a!"
+  NOT-ENOUGH-MONEY: "&cVocê não possui dinheiro suficiente."
+  INVALID-AMOUNT: "&cQuantidade inválida."
+
+COMBAT:
+  TAGGED: "&cVocê entrou em combate! Não desconecte!"
+  UNTAGGED: "&aVocê não está mais em combate."
+
+GENERAL:
+  NO-PERMISSION: "&cVocê não possui permissão para executar este comando."
+  PLAYER-ONLY: "&cApenas jogadores podem usar este comando."
+  PLAYER-NOT-FOUND: "&cJogador não encontrado ou desconectado."
+
+HOMES:
+  SET-SUCCESS: "&aHome &#6BF18D{home} &adefinida com sucesso!"
+  DELETE-SUCCESS: "&7Home &#6BF18D{home} &7deletada com sucesso!"
+  NOT-FOUND: "&cA home &#6BF18D{home} &cnão foi encontrada. Use /homes para ver sua lista."
+  LIMIT-REACHED: "&cVocê atingiu o limite máximo de homes permitido para o seu rank!"
+  NO-PERMISSION: "&cVocê não tem permissão para esta home!"
+  USAGE-SETHOME: "&cUso correto: /sethome <nome>"
+  USAGE-DELHOME: "&cUso correto: /delhome <nome>"
+  ALREADY-EXISTS: "&cVocê já possui uma home cadastrada com este nome."
+
+PRIVATE-MESSAGE:
+  SENT: "&#FFF000Você &7→ &#FFF000&n{player}&f: {message}"
+  RECEIVED: "&#FFF000&n{player} &7→ &#FFF000Você &f: {message}"
+  NO-REPLY: "&cNinguém enviou mensagem recente para você responder."
+
+SETTINGS:
+  PAY-ALERTS-ENABLED: "&7Você &aativou &7os alertas de pagamento."
+  PAY-ALERTS-DISABLED: "&7Você &cdesativou &7os alertas de pagamento."
+  HOTBAR-MESSAGES-ENABLED: "&7Você &aativou &7as mensagens na hotbar."
+  HOTBAR-MESSAGES-DISABLED: "&7Você &cdesativou &7as mensagens na hotbar."
+  CLEAR-ENTITIES-ENABLED: "&7Você &aativou &7as mensagens do lixeiro."
+  CLEAR-ENTITIES-DISABLED: "&7Você &cdesativou &7as mensagens do lixeiro."
+  BOUNTY-ALERTS-ENABLED: "&7Você &aativou &7as mensagens do bounty."
+  BOUNTY-ALERTS-DISABLED: "&7Você &cdesativou &7as mensagens do bounty."
+  CHAINMAIL-ENABLED: "&7Você &aativou &7para receber os chainmail ao renascer."
+  CHAINMAIL-DISABLED: "&7Você &cdesativou &7para não receber os chainmail ao renascer."
+  SCOREBOARD-ENABLED: "&7Você &aativou &7a scoreboard."
+  SCOREBOARD-DISABLED: "&7Você &cdesativou &7a scoreboard."
+  TPA-CONFIRM-ENABLED: "&7Você &aativou &7o menu de confirmação TPA e TPAHERE."
+  TPA-CONFIRM-DISABLED: "&7Você &cdesativou &7o menu de confirmação TPA e TPAHERE."
+  LUNAR-ENABLED: "&7Você &aativou &7as funções do Lunar Client."
+  LUNAR-DISABLED: "&7Você &cdesativou &7as funções do Lunar Client."
+  TPA-REQUESTS-ENABLED: "&7Você &aativou &7para receber pedidos de TPA."
+  TPA-REQUESTS-DISABLED: "&7Você &cdesativou &7para não receber pedidos de TPA."
+  TPA-HERE-REQUESTS-ENABLED: "&7Você &aativou &7para receber pedidos de TPAHERE."
+  TPA-HERE-REQUESTS-DISABLED: "&7Você &cdesativou &7para não receber pedidos de TPAHERE."
+  TEAM-INVITES-ENABLED: "&7Você &aativou &7para receber convites de TEAMS."
+  TEAM-INVITES-DISABLED: "&7Você &cdesativou &7para não receber convites de TEAMS."
+  PAYMENTS-ENABLED: "&7Você &aativou &7para receber pagamentos (/pay)."
+  PAYMENTS-DISABLED: "&7Você &cdesativou &7para não receber pagamentos (/pay)."
+  TEAM-CHAT-ENABLED: "&7Você &aativou &7para ver o chat do TEAM."
+  TEAM-CHAT-DISABLED: "&7Você &cdesativou &7para não ver o chat do TEAM."
+  DISABLE-MOB-SPAWN-ENABLED: "&7Você &aativou &7o spawn de monstros."
+  DISABLE-MOB-SPAWN-DISABLED: "&7Você &cdesativou &7o spawn de monstros."
+  DISABLE-PHANTOM-ENABLED: "&7Você &aativou &7o spawn de Phantoms."
+  DISABLE-PHANTOM-DISABLED: "&7Você &cdesativou &7o spawn de Phantoms."
+  PAY-CONFIRM-ENABLED: "&7Você &aativou &7a etapa de confirmação de pagamento."
+  PAY-CONFIRM-DISABLED: "&7Você &cdesativou &7a etapa de confirmação de pagamento."
+  TP-AUTO-ENABLED: "&7Você &aativou &7o aceite automático de TPA."
+  TP-AUTO-DISABLED: "&7Você &cdesativou &7o aceite automático de TPA."
+  FAST-CRYSTALS-ENABLED: "&7Você &aativou &7os cristais rápidos (Fast Crystals)."
+  FAST-CRYSTALS-DISABLED: "&7Você &cdesativou &7os cristais rápidos (Fast Crystals)."
+  TOTEM-PARTICLES-ENABLED: "&7Você &aativou &7as partículas do totem."
+  TOTEM-PARTICLES-DISABLED: "&7Você &cdesativou &7as partículas do totem."
+
+DISCORD:
+  LINK: dc.gg/aureliumshields
+  LORE:
+    - ""
+    - "&#86CAFF&l ● &#86CAFF&nDISCORD OFICIAL"
+    - ""
+    - "&fAcesse nosso discord oficial e"
+    - "&fparticipe da comunidade!"
+    - ""
+    - "&7→ &#86CAFF&n{link}"
+    - ""
+
+LOJA:
+  LINK: loja.aureliumshields.net
+  LORE:
+    - ""
+    - "&#89FF86&l ● &#89FF86&nLOJA OFICIAL"
+    - ""
+    - "&fNos ajude a manter o servidor"
+    - "&fcomprando nossos produtos!"
+    - ""
+    - "&7→ &#89FF86&n{link}"
+    - ""
+
+SITE:
+  LINK: aureliumshields.net
+  LORE:
+    - ""
+    - "&#00FFAA&l ● &#00FFAA&nSITE OFICIAL"
+    - ""
+    - "&fAcesse nosso site oficial e"
+    - "&ffique por dentro das novidades!"
+    - ""
+    - "&7→ &#00FFAA&n{link}"
+    - ""
+
+YOUTUBE:
+  LINK: youtube.com/@aureliumshields
+  LORE:
+    - ""
+    - "&#FF0000&l ● &#FF0000&nYOUTUBE OFICIAL"
+    - ""
+    - "&fInscreva-se no nosso canal oficial"
+    - "&fe acompanhe os novos vídeos!"
+    - ""
+    - "&7→ &#FF0000&n{link}"
+    - ""
